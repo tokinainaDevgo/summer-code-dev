@@ -1,0 +1,113 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
+
+body
+{
+    background: rgba(167, 167, 167, 0.459);
+}
+
+.header
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.781)), url('../img/cvback.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.civilite
+{
+    font-size: 14.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14.5px;
+    line-height: 1.5rem;
+    border-radius: 8px;
+}
+
+.btn-down
+{
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    color: white;
+    background: none;
+    border:  1px solid white;
+    padding: 8.5px;
+    border-radius: 50px;
+}
+
+.avatar
+{
+    position: absolute;
+    transform: translateY(125%);
+}
+
+.card
+{
+    font-size: 14.5px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.829);
+    box-shadow: 5px 10px 6px rgba(0, 0, 0, 0.5);
+}
+
+.card-head
+{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-body
+{
+    padding: 0 10px 10px 20px;
+}
+
+.experience, .loisirs
+{
+    padding:0 20px;
+}
+
+.apropos, .experience, .loisirs, .competence
+{
+    margin: 30px 20px;
+}
+
+@media only screen and (min-width:720px)
+{
+    .content
+    {
+        font-size: 16px;   
+    }
+   .card
+    {
+        width: 100%
+    }
+
+    .apropos
+    {
+        margin-bottom: 10px;
+    }
+
+    .experience, .loisirs, .competence
+    {
+        margin: 10px 20px;
+    }
+}
